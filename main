@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tropic Funkxprs — Portfolio</title>
+  <style>
+    :root{--accent:#00a78e;--bg:#fff;--muted:#666}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;color:#111;background:var(--bg);line-height:1.5}
+    header{background:linear-gradient(90deg,rgba(0,0,0,.35),rgba(0,0,0,.15)),url('banner.jpg') center/cover no-repeat;color:#fff;padding:72px 18px}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px)}
+    p.lead{margin:0 0 16px;color:#f0f0f0;opacity:.95}
+    .btn{display:inline-block;padding:10px 14px;margin-right:8px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+    section{padding:36px 0;border-bottom:1px solid #eee}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{background:#fafafa;padding:16px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+    footer{padding:28px 0;text-align:center;color:var(--muted);font-size:14px}
+    a.link{color:var(--accent);text-decoration:none}
+    @media (max-width:600px){header{padding:48px 12px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Tropic Funkxprs</h1>
+      <p class="lead">Borneo-born live band — tropical funk, soul & pop energy (2023–2025 portfolio)</p>
+      <a class="btn" href="https://open.spotify.com/artist/1g2Xj4bK5SuoTmYw2B7sME" target="_blank">Spotify</a>
+      <a class="btn" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">Instagram</a>
+      <a class="btn" href="portfolio.pdf" target="_blank">Download PDF</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section>
+      <h2>Executive summary</h2>
+      <p>Tropic Funkxprs is a Borneo-born live band based in Kuala Lumpur, founded by Khairul S. and Alfian Ahmad. Their sound fuses tropical funk, soul and pop — trusted in corporate, lifestyle and festival entertainment.</p>
+    </section>
+
+    <section>
+      <h2>Highlighted Events (2023–2025)</h2>
+      <div class="grid">
+        <div class="card"><strong>Burger King Malaysia</strong><div class="muted">2023–2025 — Annual Dinner</div></div>
+        <div class="card"><strong>Ford Raptor Rev</strong><div class="muted">Feb 2025 — Main entertainment</div></div>
+        <div class="card"><strong>L'Oréal Malaysia</strong><div class="muted">Oct 14, 2025 — Annual dinner</div></div>
+        <div class="card"><strong>BMW Motorrad</strong><div class="muted">MyRide 2024 — Main stage</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Studio & Credits</h2>
+      <p><strong>Khairul S.</strong> — Recorded guitar on Mafidz (Ada Angin dan Hati, Teleportasi), PureVibracion (Legalies), Temjin (Rebirth)</p>
+    </section>
+
+    <section>
+      <h2>Contact & Booking</h2>
+      <p>Email: <a class="link" href="mailto:tropicfunkxprs@gmail.com">tropicfunkxprs@gmail.com</a></p>
+      <p>Instagram: <a class="link" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">@tropicfunkxprs</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Tropic Funkxprs • Based in Kuala Lumpur
+  </footer>
+</body>
+</html>
