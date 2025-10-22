@@ -3,165 +3,198 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tropic Funkxprs — Portfolio</title>
+  <title>Tropic Funkxprs — Master Reference (2023–2025)</title>
+  <meta name="description" content="Tropic Funkxprs — Borneo-born live band. Portfolio & master reference 2023–2025.">
   <style>
-    :root {
-      --accent: #00a78e;
-      --bg: #ffffff;
-      --muted: #666666;
+    :root{
+      --accent-start:#00bfa5; --accent-end:#00a78e; --bg:#ffffff; --muted:#667085; --card:#fbfdfe;
+      --shadow: 0 6px 18px rgba(16,24,40,0.06);
     }
-    body {
-      font-family: 'Inter', system-ui, Segoe UI, Arial;
-      margin: 0;
-      color: #111;
-      background: var(--bg);
-      line-height: 1.5;
-    }
-    header {
-      background: linear-gradient(90deg, rgba(0,0,0,.35), rgba(0,0,0,.15)),
-                  url('banner.jpg') center/cover no-repeat;
-      color: #fff;
-      padding: 72px 18px;
-      text-align: left;
-    }
-    .wrap {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 28px;
-    }
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(28px, 4vw, 44px);
-    }
-    p.lead {
-      margin: 0 0 16px;
-      color: #f0f0f0;
-      opacity: .95;
-      max-width: 600px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 14px;
-      margin-right: 8px;
-      background: var(--accent);
-      color: #fff;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    section {
-      padding: 36px 0;
-      border-bottom: 1px solid #eee;
-    }
-    h2 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      color: var(--accent);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-    }
-    .card {
-      background: #fafafa;
-      padding: 16px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,.04);
-    }
-    .muted {
-      color: var(--muted);
-      font-size: 14px;
-    }
-    footer {
-      padding: 28px 0;
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      background: #f9f9f9;
-    }
-    a.link {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    @media (max-width: 600px) {
-      header {
-        padding: 48px 12px;
-      }
-    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
+    header{background: linear-gradient(90deg,var(--accent-start),var(--accent-end)); color: #fff; padding:56px 18px}
+    .hero{max-width:1100px;margin:0 auto;display:flex;gap:20px;align-items:center;justify-content:space-between}
+    .hero-left{flex:1}
+    h1{font-size:clamp(26px,3.6vw,40px);margin:0 0 8px}
+    p.lead{margin:0 0 16px;opacity:0.95;max-width:620px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06)); color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,0.06);backdrop-filter: blur(4px);transition:transform .18s ease}
+    .btn:hover{transform:translateY(-4px)}
+    .hero-right{width:360px;max-width:40%}
+    .cover{width:100%;border-radius:12px;box-shadow:var(--shadow);overflow:hidden;background:#fff;display:block}
+    main{max-width:1100px;margin:28px auto;padding:0 18px}
+    section{padding:28px 0;border-bottom:1px solid #f1f5f9}
+    h2{font-size:18px;color:var(--accent-end);margin:0 0 12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow);transition:transform .18s ease}
+    .card:hover{transform:translateY(-6px)}
+    table{width:100%;border-collapse:collapse;background:transparent}
+    th,td{padding:12px;border-bottom:1px solid #eef2f7;text-align:left;font-size:15px}
+    .member-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .member-card{background:linear-gradient(180deg,#ffffff,#fbfdfe);padding:16px;border-radius:12px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center}
+    .member-photo{width:84px;height:84px;border-radius:10px;object-fit:cover;flex-shrink:0}
+    .muted{color:var(--muted);font-size:14px}
+    .small{font-size:13px;color:#1f2937}
+    footer{padding:28px 0;text-align:center;color:var(--muted);font-size:14px;margin-top:18px}
+    a.link{color:var(--accent-end);text-decoration:none}
+    .reveal{opacity:0;transform:translateY(8px);animation:reveal .6s ease forwards}
+    @keyframes reveal{to{opacity:1;transform:none}}
+    @media (max-width:880px){.hero{flex-direction:column;align-items:flex-start}.hero-right{max-width:100%;width:100%}}
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>Tropic Funkxprs</h1>
-      <p class="lead">Borneo-born live band — tropical funk, soul & pop energy (2023–2025 portfolio)</p>
-      <a class="btn" href="https://open.spotify.com/artist/1g2Xj4bK5SuoTmYw2B7sME" target="_blank">Spotify</a>
-      <a class="btn" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">Instagram</a>
-      <a class="btn" href="portfolio.pdf" target="_blank">Download PDF</a>
+    <div class="hero">
+      <div class="hero-left">
+        <h1>Tropic Funkxprs</h1>
+        <p class="lead">Borneo-born live band — refined tropical energy for corporate, lifestyle & festival events (Master Reference 2023–2025).</p>
+        <div class="actions">
+          <a class="btn" href="#events">Events</a>
+          <a class="btn" href="#members">Members</a>
+          <a class="btn" href="portfolio.pdf" target="_blank">Download PDF</a>
+          <a class="btn" href="mailto:tropicfunkxprs@gmail.com">Contact</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="cover">
+          <img src="banner_v2.png" alt="Tropic Funkxprs banner" style="width:100%;display:block"/>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="wrap">
-    <section>
+  <main>
+    <section id="executive" class="reveal" style="animation-delay:.04s">
       <h2>Executive Summary</h2>
-      <p>Tropic Funkxprs is a Borneo-born live band based in Kuala Lumpur, founded by <strong>Khairul S.</strong> and <strong>Alfian Ahmad</strong>. Their sound fuses tropical funk, soul and pop — trusted in corporate, lifestyle and festival entertainment across Malaysia. The band continues to represent modern Borneo energy: polished, soulful, and unforgettable.</p>
+      <p class="small">Tropic Funkxprs is a Borneo-born live band based in Kuala Lumpur, founded by <strong>Khairul S.</strong> and <strong>Alfian Ahmad</strong>. Their sound fuses tropical funk, soul, and pop — uniting island rhythm with city groove. Trusted across corporate and festival stages including Burger King Malaysia, Ford Malaysia, L'Oréal Malaysia, BMW Motorrad and more.</p>
     </section>
 
-    <section>
-      <h2>Highlighted Events (2023–2025)</h2>
-      <div class="grid">
-        <div class="card">
-          <strong>Burger King Malaysia Annual Dinner</strong>
-          <div class="muted">2023–2025 — Main entertainment for 3 consecutive years</div>
+    <section id="members" class="reveal" style="animation-delay:.08s">
+      <h2>Core Members</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <img class="member-photo" src="khairul.png" alt="Khairul S.">
+          <div>
+            <strong>Khairul S.</strong>
+            <div class="muted">Guitarist / Vocalist / Co-Founder</div>
+            <div style="margin-top:8px" class="small">Multi-genre guitarist and creative director. Studio credits include Mafidz (Teleportasi), PureVibracion, Temjin.</div>
+            <div style="margin-top:8px"><a class="link" href="https://www.instagram.com/khairulsmusic/" target="_blank">@khairulsmusic</a></div>
+
+            <div style="margin-top:12px">
+              <strong>Notable Achievements (with Mafidz)</strong>
+              <ul class="small">
+                <li>AIM24 (2025) — Kugiran Terbaik / Best Band — "Teleportasi"</li>
+                <li>ALI 2024 — Lagu Terbaik &amp; Lagu Rock Terbaik — "Senandung"</li>
+                <li>Vans Musicians Wanted (2019) — Winner</li>
+                <li>#ProjekMuzikHotFM (2015) — Winner</li>
+                <li>MTV Aloft Star (2015–2016) — Finalist</li>
+              </ul>
+            </div>
+
+          </div>
         </div>
-        <div class="card">
-          <strong>Ford Raptor Rev</strong>
-          <div class="muted">Feb 2025 — Main entertainment act for Ford Malaysia</div>
-        </div>
-        <div class="card">
-          <strong>L’Oréal Malaysia Annual Dinner</strong>
-          <div class="muted">Oct 14, 2025 — Main entertainment act at Aloft KL Sentral</div>
-        </div>
-        <div class="card">
-          <strong>BMW Motorrad MyRide</strong>
-          <div class="muted">2024 — Main stage act near Monkey Canopy</div>
-        </div>
-        <div class="card">
-          <strong>KKCD 2024 (Kota Kinabalu Countdown)</strong>
-          <div class="muted">Sold-out New Year’s Eve event at Sky Zone</div>
-        </div>
-        <div class="card">
-          <strong>YSDAF 2023</strong>
-          <div class="muted">Singer-songwriter solo performance (StageReSET / Buskers Zone)</div>
+
+        <div class="member-card">
+          <img class="member-photo" src="alfian.png" alt="Alfian Ahmad">
+          <div>
+            <strong>Alfian Ahmad</strong>
+            <div class="muted">Vocalist / Percussionist / Co-Founder</div>
+            <div style="margin-top:8px" class="small">Rhythm architect and stage leader — blending live percussion with vocal energy for immersive performances.</div>
+            <div style="margin-top:8px"><a class="link" href="https://www.instagram.com/alfian_mad69/" target="_blank">@alfian_mad69</a></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Studio & Recording Credits</h2>
-      <p><strong>Khairul S.</strong> — Recorded guitar on:</p>
-      <ul>
-        <li>Mafidz – <em>“Ada Angin dan Hati”</em> & <em>“Teleportasi”</em></li>
-        <li>PureVibracion – <em>“Legalies”</em></li>
-        <li>Temjin – <em>“Rebirth”</em></li>
-      </ul>
-      <p>🎧 Spotify — 
-        <a class="link" href="https://open.spotify.com/artist/1g2Xj4bK5SuoTmYw2B7sME" target="_blank">Mafidz</a> | 
-        <a class="link" href="https://open.spotify.com/artist/1AgDcTN54xUyLmDxENgE" target="_blank">Temjin</a>
-      </p>
+    <section id="events" class="reveal" style="animation-delay:.12s">
+      <h2>Brand & Corporate Events (2023–2025)</h2>
+      <div class="card" style="padding:12px">
+        <table>
+          <thead><tr><th>Event</th><th>Year</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td>Burger King Malaysia Annual Dinner</td><td>2023–2025</td><td>3 consecutive years as main entertainment</td></tr>
+            <tr><td>BMW Motorrad / Borders M Sdn. Bhd.</td><td>2023–2024</td><td>Melaka Pitstop Dinner (2023, TBC); MyRide 2024 (main stage)</td></tr>
+            <tr><td>Ford Raptor Rev</td><td>Feb 2025</td><td>Main entertainment act for Ford Malaysia</td></tr>
+            <tr><td>L'Oréal Malaysia Annual Dinner</td><td>14 Oct 2025</td><td>Main entertainment at Aloft KL Sentral</td></tr>
+            <tr><td>Sime Motors 45th Anniversary</td><td>2025</td><td>Corporate celebration performance</td></tr>
+            <tr><td>Vertiv Private Event</td><td>2025</td><td>Exclusive live show</td></tr>
+            <tr><td>AVM Cloud Corporate Event</td><td>2024</td><td>Tech industry performance</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section>
+    <section id="live" class="reveal" style="animation-delay:.16s">
+      <h2>Live Shows, Residencies & Festivals</h2>
+      <div class="grid">
+        <div class="card"><strong>KKCD 2024 — Kota Kinabalu Countdown</strong><div class="muted">2024 — Sky Zone — Sold Out</div></div>
+        <div class="card"><strong>New Year’s Eve Countdown 2023 — Republik Damansara Heights</strong><div class="muted">2023 — Countdown performance</div></div>
+        <div class="card"><strong>Chinese New Year — Wild Hogs, Sri Hartamas</strong><div class="muted">2022–2023 — Festive sets</div></div>
+        <div class="card"><strong>YSDAF 2023 — StageReSET</strong><div class="muted">2023 — Solo performance by Khairul S.</div></div>
+      </div>
+    </section>
+
+    <section id="credits" class="reveal" style="animation-delay:.2s">
+      <h2>Member Profiles & Studio Credits</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Khairul S.</h3>
+          <p class="small"><strong>Role:</strong> Guitarist, Vocalist, Co-Founder</p>
+          <p class="small"><strong>Studio Recording Credits:</strong></p>
+          <ul class="small">
+            <li>Mafidz — Ada Angin dan Hati; Teleportasi</li>
+            <li>PureVibracion — Legalies</li>
+            <li>Temjin — Rebirth</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Alfian Ahmad</h3>
+          <p class="small"><strong>Role:</strong> Vocalist, Percussionist, Co-Founder</p>
+          <p class="small"><strong>Performance Highlights:</strong> Ford Raptor Rev 2025; BMW Motorrad MyRide 2024; L'Oréal Malaysia 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" class="reveal" style="animation-delay:.24s">
+      <h2>External Links & Press</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Spotify & Music</strong>
+          <p class="muted small"><a class="link" href="https://open.spotify.com/artist/1g2Xj4bK5SuoTmYw2B7sME" target="_blank">Mafidz — Artist Page</a></p>
+        </div>
+        <div class="card">
+          <strong>Instagram</strong>
+          <p class="muted small"><a class="link" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">@tropicfunkxprs</a></p>
+        </div>
+        <div class="card">
+          <strong>Press</strong>
+          <p class="muted small"><a class="link" href="https://baskl.com.my/breathe-into-malaysian-arts-at-the-yayasan-sime-darby-arts-festival-ysdaf-2023/" target="_blank">BASKL — YSDAF 2023</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="photos" class="reveal" style="animation-delay:.28s">
+      <h2>Photo Source References</h2>
+      <table>
+        <thead><tr><th>Event</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr><td>Ford Raptor Rev 2025</td><td><a class="link" href="https://www.facebook.com/FordMalaysia/" target="_blank">Ford Malaysia — Facebook</a></td></tr>
+          <tr><td>BMW Motorrad MyRide 2024</td><td><a class="link" href="https://www.facebook.com/BMWMotorradMY/" target="_blank">BMW Motorrad Malaysia — Facebook</a></td></tr>
+          <tr><td>YSDAF 2023</td><td><a class="link" href="https://baskl.com.my/breathe-into-malaysian-arts-at-the-yayasan-sime-darby-arts-festival-ysdaf-2023/" target="_blank">BASKL — YSDAF 2023</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contact" class="reveal" style="animation-delay:.32s">
       <h2>Contact & Booking</h2>
-      <p>Email: <a class="link" href="mailto:tropicfunkxprs@gmail.com">tropicfunkxprs@gmail.com</a></p>
-      <p>Instagram: <a class="link" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">@tropicfunkxprs</a></p>
-      <p>Based in Kuala Lumpur, Malaysia</p>
+      <p class="small">Email: <a class="link" href="mailto:tropicfunkxprs@gmail.com">tropicfunkxprs@gmail.com</a></p>
+      <p class="small">Instagram: <a class="link" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">@tropicfunkxprs</a></p>
+      <p class="small">Based in: Kuala Lumpur, Malaysia</p>
     </section>
   </main>
 
   <footer>
-    © 2025 Tropic Funkxprs • All Rights Reserved
+    © 2025 Tropic Funkxprs • Master Reference
   </footer>
 </body>
 </html>
