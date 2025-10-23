@@ -3,64 +3,268 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tropic Funkxprs — Portfolio</title>
+  <title>Tropic Funkxprs — Portfolio Master Reference (2023–2025)</title>
+  <meta name="description" content="Official Tropic Funkxprs Portfolio Master Reference (2023–2025). Executive summary, events, residencies, members, press & links."/>
   <style>
-    :root{--accent:#00a78e;--bg:#fff;--muted:#666}
-    body{font-family:Inter,system-ui,Segoe UI,Arial;margin:0;color:#111;background:var(--bg);line-height:1.5}
-    header{background:linear-gradient(90deg,rgba(0,0,0,.35),rgba(0,0,0,.15)),url('banner.jpg') center/cover no-repeat;color:#fff;padding:72px 18px}
-    .wrap{max-width:1100px;margin:0 auto;padding:28px}
-    h1{margin:0 0 8px;font-size:clamp(28px,4vw,44px)}
-    p.lead{margin:0 0 16px;color:#f0f0f0;opacity:.95}
-    .btn{display:inline-block;padding:10px 14px;margin-right:8px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
-    section{padding:36px 0;border-bottom:1px solid #eee}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-    .card{background:#fafafa;padding:16px;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,.04)}
-    footer{padding:28px 0;text-align:center;color:var(--muted);font-size:14px}
-    a.link{color:var(--accent);text-decoration:none}
-    @media (max-width:600px){header{padding:48px 12px}}
+    :root{
+      --bg:#fff9f2;
+      --accent:#EBAF5A; /* sunset gold */
+      --teal:#2F9A94;
+      --coral:#FF6F61;
+      --muted:#6b6b6b;
+      --card:#ffffff;
+      --maxw:980px;
+      --pad:20px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{background:linear-gradient(180deg,#fff9f2 0%, #f7fbfb 100%); color:#19202a; margin:0; padding:24px; display:flex; justify-content:center;}
+    .wrap{width:100%; max-width:var(--maxw);}
+    header{display:flex; align-items:center; gap:16px; margin-bottom:18px;}
+    .logo{
+      width:72px; height:72px; border-radius:12px; background:linear-gradient(135deg,var(--teal),var(--accent));
+      display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:20px; box-shadow:0 6px 18px rgba(45,50,50,0.12);
+    }
+    h1{margin:0; font-size:20px; letter-spacing:0.2px;}
+    .subtitle{color:var(--muted); font-size:13px; margin-top:6px;}
+    nav{margin:18px 0; display:flex; gap:10px; flex-wrap:wrap;}
+    nav a{background:var(--card); padding:8px 12px; border-radius:8px; text-decoration:none; color:#1b2a2a; font-weight:600; box-shadow:0 2px 8px rgba(7,10,10,0.04); font-size:13px;}
+    main{display:block;}
+    section.card{background:var(--card); padding:18px; border-radius:12px; box-shadow:0 6px 18px rgba(45,50,50,0.06); margin-bottom:18px;}
+    h2{margin:0 0 8px 0; color:#14323b;}
+    p.lead{margin:0 0 12px 0; color:#314248;}
+    ul{margin-top:8px;}
+    table{width:100%; border-collapse:collapse; margin-top:8px;}
+    th,td{padding:8px 10px; text-align:left; border-bottom:1px solid #f0f0f0; font-size:14px;}
+    .muted{color:var(--muted); font-size:13px;}
+    .chips{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;}
+    .chip{background:linear-gradient(90deg,#fff,#fff); padding:6px 10px; border-radius:999px; font-weight:600; font-size:13px; border:1px solid #f0f0f0;}
+    footer{margin-top:16px; color:var(--muted); font-size:13px; text-align:center;}
+    a.inline{color:var(--teal); text-decoration:none; font-weight:600;}
+    @media (max-width:640px){
+      header{gap:12px;}
+      .logo{width:56px;height:56px;font-size:18px;}
+      .wrap{padding:0 10px;}
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <h1>Tropic Funkxprs</h1>
-      <p class="lead">Borneo-born live band — tropical funk, soul & pop energy (2023–2025 portfolio)</p>
-      <a class="btn" href="https://open.spotify.com/artist/1g2Xj4bK5SuoTmYw2B7sME" target="_blank">Spotify</a>
-      <a class="btn" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">Instagram</a>
-      <a class="btn" href="portfolio.pdf" target="_blank">Download PDF</a>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section>
-      <h2>Executive summary</h2>
-      <p>Tropic Funkxprs is a Borneo-born live band based in Kuala Lumpur, founded by Khairul S. and Alfian Ahmad. Their sound fuses tropical funk, soul and pop — trusted in corporate, lifestyle and festival entertainment.</p>
-    </section>
-
-    <section>
-      <h2>Highlighted Events (2023–2025)</h2>
-      <div class="grid">
-        <div class="card"><strong>Burger King Malaysia</strong><div class="muted">2023–2025 — Annual Dinner</div></div>
-        <div class="card"><strong>Ford Raptor Rev</strong><div class="muted">Feb 2025 — Main entertainment</div></div>
-        <div class="card"><strong>L'Oréal Malaysia</strong><div class="muted">Oct 14, 2025 — Annual dinner</div></div>
-        <div class="card"><strong>BMW Motorrad</strong><div class="muted">MyRide 2024 — Main stage</div></div>
+  <div class="wrap">
+    <header>
+      <div class="logo">TF</div>
+      <div>
+        <h1>Tropic Funkxprs — Portfolio Master Reference (2023–2025)</h1>
+        <div class="subtitle">Official reference • Executive summary, events, members, press & links</div>
       </div>
-    </section>
+    </header>
 
-    <section>
-      <h2>Studio & Credits</h2>
-      <p><strong>Khairul S.</strong> — Recorded guitar on Mafidz (Ada Angin dan Hati, Teleportasi), PureVibracion (Legalies), Temjin (Rebirth)</p>
-    </section>
+    <nav>
+      <a href="#executive">Executive Summary</a>
+      <a href="#events">Corporate & Brand Events</a>
+      <a href="#venues">Residencies</a>
+      <a href="#charity">Charity & Festivals</a>
+      <a href="#members">Member Profiles</a>
+      <a href="#links">External Links</a>
+    </nav>
 
-    <section>
-      <h2>Contact & Booking</h2>
-      <p>Email: <a class="link" href="mailto:tropicfunkxprs@gmail.com">tropicfunkxprs@gmail.com</a></p>
-      <p>Instagram: <a class="link" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">@tropicfunkxprs</a></p>
-    </section>
-  </main>
+    <main>
 
-  <footer>
-    © 2025 Tropic Funkxprs • Based in Kuala Lumpur
-  </footer>
+      <!-- Executive Summary -->
+      <section id="executive" class="card">
+        <h2>🌞 Executive Summary (2023–2025)</h2>
+        <p class="lead">
+          <strong>Tropic Funkxprs</strong> is a Borneo-born live band based in Kuala Lumpur, founded by <strong>Khairul S.</strong> and <strong>Alfian Ahmad</strong>. Their signature sound fuses tropical funk, soul, and pop — uniting island rhythm with city groove.
+        </p>
+        <p class="muted">
+          From Burger King Malaysia’s annual dinners to Ford Raptor Rev 2025, L’Oréal Malaysia, BMW Motorrad, and Sime Motors, the band has become a trusted name in corporate, lifestyle, and festival entertainment.
+          They’ve also made creative marks through YSDAF 2023, KKCD 2024, and multiple charity shows.
+        </p>
+      </section>
+
+      <!-- Corporate & Brand Events -->
+      <section id="events" class="card">
+        <h2>🏢 Corporate & Brand Events (Verified)</h2>
+        <ul>
+          <li><strong>Burger King Malaysia Annual Dinner</strong> — 2023, 2024, 2025 (Recurring 3 years)</li>
+          <li><strong>BMW Motorrad / Borders M Sdn. Bhd.</strong> — MyRide 2024 (Main stage), Melaka Pitstop Dinner 2023 (TBC)</li>
+          <li><strong>Ford Malaysia</strong> — Raptor Rev (Feb 2025); Ford Ranger Wildtrak Event (2025)</li>
+          <li><strong>Sime Motors</strong> — 45th Anniversary (campaign)</li>
+          <li><strong>L’Oréal Malaysia</strong> — Dinner events: 2024 (Terra PJ), 2025 (Aloft KL Sentral)</li>
+          <li><strong>Hartamas Company Dinner</strong> (Terra PJ) — organized by The Hungry Bunch</li>
+          <li><strong>AVM Cloud</strong> — Annual Dinner 2024 (Awana Genting)</li>
+          <li><strong>Vertiv</strong> — Corporate events (2024–2025), private event @ Roppongi 35 (2025)</li>
+          <li><strong>Janoschka Malaysia</strong> — Party (Nov 2024)</li>
+        </ul>
+      </section>
+
+      <!-- Venue Residencies -->
+      <section id="venues" class="card">
+        <h2>🪩 Venue Residencies & Weekly Gigs</h2>
+        <table>
+          <thead><tr><th>Year</th><th>Venues</th></tr></thead>
+          <tbody>
+            <tr><td>2023</td><td>Wild Hogs (Sri Hartamas), Blush by G String (Publika)</td></tr>
+            <tr><td>2024</td><td>Roppongi 35 PJ, Terra PJ, Ronin (Mont Kiara), The Golden Years PJ, Atlantis KL, The Good Live S2</td></tr>
+            <tr><td>2025</td><td>Atlantis KL, Terra PJ, Roppongi 35, Loco TTDI, The Good Live S2</td></tr>
+          </tbody>
+        </table>
+        <p class="muted">Managed by: <strong>Yihan Busker Entertainment</strong> &amp; <strong>The Hungry Bunch</strong></p>
+      </section>
+
+      <!-- Collaborations -->
+      <section id="collab" class="card">
+        <h2>🎭 Collaborations & Partners</h2>
+        <ul>
+          <li>Yihan Busker Entertainment — Roppongi 35, The Golden Years, Atlantis KL</li>
+          <li>The Hungry Bunch (THB MGMT Sdn Bhd) — Terra PJ, Ronin Mont Kiara</li>
+          <li>Stage Reset — YSDAF 2023, Miss Cosmopolitan World 2024</li>
+          <li>Dionysus Asia Sdn. Bhd. — Justwine KL, Corks Out, Blackcamp, Oomph (Bukit Jalil & Megah Rise)</li>
+        </ul>
+      </section>
+
+      <!-- Charity & Festivals -->
+      <section id="charity" class="card">
+        <h2>❤️ Charity, Public & Festival Shows</h2>
+        <ul>
+          <li>ProjectJannah.MY Old Folks Charity Event (May 5, 2024)</li>
+          <li>iQ70+ Charity Event</li>
+          <li>YSDAF 2023 — Tropic Funkxprs Showcase</li>
+          <li>Miss Cosmopolitan World 2024 — Zakka Campsite (Stage Reset)</li>
+          <li>KKCD 2024 — Kota Kinabalu Countdown (Sky Zone) — <strong>Sold Out</strong></li>
+          <li>New Year’s Eve Countdown 2023 — Republik Damansara Heights (31 Dec 2023)</li>
+          <li>Chinese New Year Celebration — Wild Hogs Sri Hartamas (2022 & 2023)</li>
+        </ul>
+      </section>
+
+      <!-- Achievements -->
+      <section id="achievements" class="card">
+        <h2>🏆 Band Achievements</h2>
+        <ul>
+          <li>Recognized for consistent corporate & lifestyle performances nationwide.</li>
+          <li>Featured at Yayasan Sime Darby Arts Festival (YSDAF 2023).</li>
+          <li>Performed for Burger King, BMW, L’Oréal, Sime Motors, Vertiv, Ford, AVM Cloud, and others.</li>
+          <li>Represents a Borneo-born live act blending modern funk & pop-soul.</li>
+        </ul>
+      </section>
+
+      <!-- Members -->
+      <section id="members" class="card">
+        <h2>🎸 Member Profiles</h2>
+
+        <article style="margin-bottom:12px;">
+          <h3>Khairul S.</h3>
+          <p class="muted">Roles: Guitarist · Vocalist · Music Director</p>
+
+          <h4>Achievements & Collaborations</h4>
+          <ul>
+            <li>AIM24 (2025) — Best Band “Teleportasi”</li>
+            <li>ALI24 (2024) — Best Song & Best Rock Song “Senandung” feat. Otam</li>
+            <li>Royal performance before Sultan Nazrin Muizzuddin Shah (2025)</li>
+            <li>Vans Musicians Wanted Winner (2019)</li>
+            <li>Projek Muzik HotFM Winner (2016) — “Dua Kaki Berlari” (Monalyssa)</li>
+            <li>MTV Aloft Star Finalist (2015–2016) — TEMJIN (KL) & Monalyssa (Bangkok)</li>
+            <li>Battle of the Bands Winner (2012), Rock the World Performer (2011)</li>
+            <li>Founder of Feel Tu Penting (FTP) — with Endee Ahmad, Otam, Mariamlisa</li>
+          </ul>
+
+          <h4>Studio Recording Credits</h4>
+          <ul>
+            <li>Mafidz — Albums: “Ada Angin dan Hati” & “Teleportasi” — <a class="inline" href="https://www.instagram.com/mafidzofficial/" target="_blank">@mafidzofficial</a></li>
+            <li>PureVibracion — Album: “Legalies” — <a class="inline" href="https://www.instagram.com/purevibracion/" target="_blank">@purevibracion</a></li>
+            <li>Temjin — Album: “Rebirth” — <a class="inline" href="https://www.instagram.com/temjinrocks/" target="_blank">@temjinrocks</a></li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Alfian Ahmad</h3>
+          <p class="muted">Roles: Vocalist · Percussionist</p>
+
+          <h4>Highlights</h4>
+          <ul>
+            <li>Opening act for Nazareth (Love Hurts Tour, Germany)</li>
+            <li>Royal performance (collaborative project)</li>
+            <li>Resident performer — Hard Rock Café Puteri Harbour (Johor)</li>
+            <li>Collaborated with Andy Irwandy on “BUKAN KAMU” — <a class="inline" href="#" target="_blank">YouTube</a></li>
+            <li>
+              <strong>YSDAF 2023 — Singer-songwriter solo performance (StageReSET / Buskers Zone)</strong><br>
+              Performed solo at the Yayasan Sime Darby Arts Festival 2023 (music/buskers zone).<br>
+              Sources:
+              <a class="inline" href="https://baskl.com.my/breathe-into-malaysian-arts-at-the-yayasan-sime-darby-arts-festival-ysdaf-2023/" target="_blank">BASKL</a> |
+              <a class="inline" href="https://www.happygokl.com/yayasan-sime-darby-arts-festival-2023/" target="_blank">HappyGoKL</a> |
+              <a class="inline" href="https://www.nst.com.my/lifestyle/groove/2023/08/948930/ysdaf-2023-festival-diversity-and-creativity" target="_blank">NST</a> |
+              <a class="inline" href="https://www.facebook.com/ysdartsfest/posts/pfbid02eh7mHx17cDtdx1g3sJkAM2BY6XUyrWzUsAgvPPLwD9vSfSKHEMi8AZWDBLQ8jMxl" target="_blank">YSD Arts Fest (FB)</a>
+            </li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- Contacts -->
+      <section id="contacts" class="card">
+        <h2>📞 Official Contact Information</h2>
+        <p><strong>Alfian Ahmad</strong> – <a class="inline" href="tel:+60168518575">+60 16 851 8575</a></p>
+        <p><strong>Khairul S.</strong> – <a class="inline" href="tel:+60134604572">+60 13 460 4572</a></p>
+        <p><strong>Email:</strong> <a href="mailto:tropicfunkxprs@gmail.com" class="inline">tropicfunkxprs@gmail.com</a></p>
+        <p><strong>Instagram:</strong>
+          <a class="inline" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">@tropicfunkxprs</a> |
+          <a class="inline" href="https://www.instagram.com/khairulsmusic/" target="_blank">@khairulsmusic</a> |
+          <a class="inline" href="https://www.instagram.com/alfian_mad69/" target="_blank">@alfian_mad69</a>
+        </p>
+      </section>
+
+      <!-- External Links & Photo Sources -->
+      <section id="links" class="card">
+        <h2>🌐 External References & Links</h2>
+
+        <h4>Spotify & Music Links</h4>
+        <ul>
+          <li>Mafidz — Artist Page: <a href="https://open.spotify.com/artist/1g2Xj4bK5SuoTmYw2B7sME" target="_blank">Spotify</a></li>
+          <li>Ada Angin &amp; Hati (Mafidz): <a href="https://open.spotify.com/intl-id/album/1L5nwaSNUF5SpNqS6UZ6eb" target="_blank">Spotify</a></li>
+          <li>Teleportasi (Mafidz): <a href="https://open.spotify.com/intl-pt/album/38A7gnAIjjawgnxhsqJtBz" target="_blank">Spotify</a></li>
+          <li>Temjin — Artist Page: <a href="https://open.spotify.com/artist/1AgDcTN54xUyLmDxENgE" target="_blank">Spotify</a></li>
+          <li>Rebirth (Temjin): <a href="https://open.spotify.com/album/4uuBPMRv4qU4wN2gVeZ1eV" target="_blank">Spotify</a></li>
+          <li>PureVibracion — <span class="muted">Legalies (CD buyers only)</span></li>
+        </ul>
+
+        <h4>Instagram Links</h4>
+        <div class="chips">
+          <a class="chip" href="https://www.instagram.com/tropicfunkxprs/" target="_blank">@tropicfunkxprs</a>
+          <a class="chip" href="https://www.instagram.com/khairulsmusic/" target="_blank">@khairulsmusic</a>
+          <a class="chip" href="https://www.instagram.com/alfian_mad69/" target="_blank">@alfian_mad69</a>
+          <a class="chip" href="https://www.instagram.com/mafidzofficial/" target="_blank">@mafidzofficial</a>
+          <a class="chip" href="https://www.instagram.com/purevibracion/" target="_blank">@purevibracion</a>
+          <a class="chip" href="https://www.instagram.com/temjinrocks/" target="_blank">@temjinrocks</a>
+        </div>
+
+        <h4>Press & Festival Links</h4>
+        <ul>
+          <li><a href="https://baskl.com.my/breathe-into-malaysian-arts-at-the-yayasan-sime-darby-arts-festival-ysdaf-2023/" target="_blank">BASKL Festival Coverage</a></li>
+          <li><a href="https://www.happygokl.com/yayasan-sime-darby-arts-festival-2023/" target="_blank">HappyGoKL Preview</a></li>
+          <li><a href="https://www.nst.com.my/lifestyle/groove/2023/08/948930/ysdaf-2023-festival-diversity-and-creativity" target="_blank">New Straits Times</a></li>
+          <li><a href="https://www.facebook.com/ysdartsfest/posts/pfbid02eh7mHx17cDtdx1g3sJkAM2BY6XUyrWzUsAgvPPLwD9vSfSKHEMi8AZWDBLQ8jMxl" target="_blank">YSD Arts Fest (Facebook photo)</a></li>
+        </ul>
+
+        <h4>Photo Source References (with Links)</h4>
+        <table>
+          <thead><tr><th>Event</th><th>Source / Reference Link</th></tr></thead>
+          <tbody>
+            <tr><td>Ford Raptor Rev 2025</td><td><a href="https://www.facebook.com/FordMalaysia/" target="_blank">Ford Malaysia (FB)</a></td></tr>
+            <tr><td>BMW Motorrad MyRide 2024</td><td><a href="https://www.facebook.com/BMWMotorradMY/" target="_blank">BMW Motorrad Malaysia (FB)</a></td></tr>
+            <tr><td>Sime Motors 45th Anniversary</td><td><a href="https://www.simedarbymotors.com/" target="_blank">Sime Darby Motors Malaysia</a></td></tr>
+            <tr><td>Vertiv 2025 Private Event</td><td><a href="https://www.facebook.com/VertivMY/" target="_blank">Vertiv Malaysia (FB)</a></td></tr>
+            <tr><td>Miss Cosmopolitan World 2024</td><td><a href="https://www.facebook.com/misscosmopolitanworld/" target="_blank">Miss Cosmopolitan World (FB)</a></td></tr>
+            <tr><td>YSDAF 2023</td><td><a href="https://baskl.com.my/breathe-into-malaysian-arts-at-the-yayasan-sime-darby-arts-festival-ysdaf-2023/" target="_blank">YSDAF Official Page</a></td></tr>
+            <tr><td>iQ70+ Charity Event</td><td><a href="https://www.instagram.com/iq70plus/?hl=en" target="_blank">iQ70+ (IG)</a></td></tr>
+          </tbody>
+        </table>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="muted">Tropic Funkxprs — Portfolio Master Reference (2023–2025) • For design and press use.</div>
+      <div style="margin-top:6px;" class="muted">Maintained by: Khairul S. &amp; Alfian Ahmad — contact via <a href="mailto:tropicfunkxprs@gmail.com" class="inline">tropicfunkxprs@gmail.com</a></div>
+    </footer>
+  </div>
 </body>
 </html>
